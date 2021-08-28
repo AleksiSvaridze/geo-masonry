@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JustInfo</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-le-studio-04/css/bpg-le-studio-04.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="modal">
+      <div class="modal-wrapper" id="modal-window">
+      <div class="left-block">
+
+        <div class="scene">
+          <div class="cube">
+            <div class="cube__face cube__face--front">
+              <img class="_3d-cube-img" id="img-1">
+            </div>
+            <div class="cube__face cube__face--back">
+              <img class="_3d-cube-img" id="img-2">
+            </div>
+            <div class="cube__face cube__face--right">
+              <img class="_3d-cube-img" id="img-3">
+            </div>
+            <div class="cube__face cube__face--left">
+              <img class="_3d-cube-img" id="img-4">
+            </div>
+
+          </div> <!--cube-->
+
+        </div> <!--scene-->
+
+      </div> <!--Left-block-->
+
+      <div class="right-block" id="desktop">
+        <p class="info" data-content="html"></p>
+        <p class="info" data-content="css"></p>
+        <p class="info" data-content="js"></p>
+        <br>
+        <hr>
+        <br>
+        <p class="info" data-content="bootstrap"></p>
+        <p class="info" data-content="jq"></p>
+        <p class="info" data-content="lib_1"></p>
+        <p class="info" data-content="lib_2"></p>
+        <p class="info" data-content="lib_3"></p>
+        <p class="info" data-content="lib_4"></p>
+      </div> <!--right-block-->
+      <i class="far fa-times-circle" id="close-btn"></i>
+      <div class="btn-wrapper">
+        <a class="server" target="_blank" href="">View 0n Server</a>
+        <a class="github" target="_blank" href="">View On Github</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="next-modal">
+    <i class="far fa-window-close" id="close-next-modal"></i>
+  </div> -->
+
+  <div class="grid">
+    <div class="grid-item grid-item--width2 grid-item--height2">
+      <img src="assets/img/me/3.png" class="img-290x290">
+      <div class="div"></div>
+      <img src="assets/img/me/2-half.jpg" class="img-half-2">
+      <img src="assets/img/me/1-half.jpg" class="img-half-1">
+    </div>
+    <div class="grid-item grid-item--width2 last-products open-next-modal">
+      <p class="vertical-p">ბოლოს</p>
+      <p class="horizontal-p">დასრულებული</p>
+    </div>
+    <div class="grid-item grid-item--width2 all-productes open-next-modal">
+      <p class="all-p">ყველა</p>
+      <p class="h-p">საიტი</p>
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/acgallery/4.png" class="img-140x140" id="gallery" onclick="changeData('gallery')">
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/auto/1.jpg" class="img-140x140" id="auto" onclick="changeData('auto')">
+    </div>
+    <div class="grid-item grid-item--width2 current open-next-modal">
+      <p class="current-p">მიმდინარე</p>
+      <p class="current-p2">პროექტები</p>
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/cars/2.jpg" class="img-140x140" id="cars" onclick="changeData('cars')">
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/guest/4.png" class="img-140x140" id="guest" onclick="changeData('guest')">
+    </div>
+    <div class="grid-item grid-item--height2 pros-bootstrap open-next-modal">
+      <div class="vertical-div-1">
+        <p>პ</p>
+        <p>რ</p>
+        <p>ო</p>
+        <p>ე</p>
+        <p>ქ</p>
+        <p>ტ</p>
+        <p>ე</p>
+        <p>ბ</p>
+        <p>ი</p>
+      </div>
+      <div class="vertical-div-2">
+        <p>ბ</p>
+        <p>უ</p>
+        <p>ტ</p>
+        <p>ს</p>
+        <p>ტ</p>
+        <p>რ</p>
+        <p>ა</p>
+        <p>ფ</p>
+        <p>ზ</p>
+        <p>ე</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/howto/1.png" class="img-140x140" id="howto" onclick="changeData('howto')">
+    </div>
+    <div class="grid-item grid-item--width2 finished open-next-modal">
+      <p class="finished-p-1">დასრულებული</p>
+      <p class="finished-p-2">პროექტები</p>
+    </div>
+    <div class="grid-item grid-item--height2 my-markup open-next-modal">
+      <p class="my-markup-p">ჩე<span>მ</span>ი</p>
+      <div class="my-markup-div">
+        <p>ა</p>
+        <p>რ</p>
+        <p>ქ</p>
+        <p>ა</p>
+        <p>ფ</p>
+        <p>ი</p>
+        <p>თ</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/karizi/1.png" class="img-140x140" id="karizi" onclick="changeData('karizi')">
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/livingstone/2.png" class="img-140x140" id="livingstone" onclick="changeData('livingstone')">
+    </div>
+    <div class="grid-item grid-item--width2 contact">
+
+      <div class="contact-header">
+        <p class="contact-p">ელ-ფოსტა</p>
+        <div class="thumb-wrapper">
+          <div class="thumb" onclick="moveBtn()"></div>
+        </div>
+      </div>
+
+      <div class="email-div">
+        <a href="mailto:aleksisvaridze@gmail.com" class="email-a">AleksiSvaridze@gmail.com</a>
+      </div>
+    </div>
+    <div class="grid-item grid-item--width2"></div>
+    <div class="grid-item">
+      <img src="assets/img/portfolio/3.png" class="img-140x140" id="portfolio" onclick="changeData('portfolio')">
+    </div>
+    <div class="grid-item grid-item--width2"></div>
+    <div class="grid-item">
+      <img src="assets/img/stiker/2.png" class="img-140x140" id="stiker" onclick="changeData('stiker')">
+    </div>
+    <div class="grid-item">
+      <img src="assets/img/beartist/1.png" class="img-140x140" id="beartist" onclick="changeData('beartist')">
+    </div>
+  </div>
+
+<div class="progress">
+  <p>i</p>
+  <p>n</p>
+  <br>
+  <p>p</p>
+  <p>r</p>
+  <p>o</p>
+  <p>g</p>
+  <p>r</p>
+  <p>e</p>
+  <p>s</p>
+  <p>s</p>
+</div>
+<script src="assets/js/jQ.3.3.1.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/portfolio.js"></script>
+<script src="assets/js/lastPros.js"></script>
+<script src="assets/js/currentPros.js"></script>
+<script src="assets/js/bootstrapPros.js"></script>
+<script src="assets/js/finishedPros.js"></script>
+<script src="assets/js/myMarkup.js"></script>
+</body>
+
+</html>
